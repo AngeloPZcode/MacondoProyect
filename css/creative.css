@@ -10765,8 +10765,8 @@ color: #007bff;
 
   position: relative;
   float: left;
-  border-radius: 12px;
-display: block;
+  
+ display: block;
 }
 
 iframe{

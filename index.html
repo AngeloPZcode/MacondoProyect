@@ -26,13 +26,12 @@
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="edits.css">
-  <script src="https://kit.fontawesome.com/48494bd26b.js" crossorigin="anonymous"></script>
-</head>
+ <link rel="stylesheet" href="css/formstyle.css">
+ <script src="https://kit.fontawesome.com/48494bd26b.js" crossorigin="anonymous"></script></head>
 
 <body id="page-top">
 
-  <!-- Navigation -->
+  <!-- Navigation --><div class="">
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
      <div class="container">
       <a href="#page-top">
@@ -61,11 +60,13 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
           </li>
+           <a target="_blank" href="https://www.facebook.com/Macondo-113184015379929"><i class="fa-brands fa-facebook  text-muted"></i> </a>
+           
         </ul>
       </div>
     </div>
   </nav>
-
+</div>
   <!-- Masthead -->
   <header class="masthead">
     <div class="container h-100">
@@ -120,14 +121,11 @@
     <div class="container">
       <h2 class="text-center mt-0">A tu servicio</h2>
       <hr class="divider my-4">
-
+      <!-- fas fa-4x fa-gem -->
       <div class="row">
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
-            <i class="fa-solid fa-screen-users"></i>
              <i class="fas fa-4x fa-gem text-primary mb-4"></i> 
-                    <!--  <img src="img/administracion.png" alt="logo" srcset=""> -->
-               
             <h3 class="h4 mb-2">Operación del condominio</h3> <br>
             <ul class="text-muted mb-0">Administración de los empleados del condominio. </ul><br>
             <ul class="text-muted mb-0">Atención de emergencias las 24 horas. </ul><br>
@@ -273,54 +271,121 @@
  
   <section id="direc" class="page-section bg-dark text-white">
     <h2 class="mb-4 text-center">Nuestras oficinas</h2>
-      <div class="maps "> 
+      <div class="maps"> 
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d245.6104441378423!2d-84.1958609!3d9.9533252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f95ab1c3d391%3A0x9d1c865a0a346939!2sMacondo!5e0!3m2!1ses-419!2scr!4v1646153880907!5m2!1ses-419!2scr" width="100%" height="600rem" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       
       </div>
-    </section> 
-
-  <!-- Contact Section -->
-  <section class="page-section" id="contact">
+    </section>
+   <!-- Contact Section -->
+  <section class="page-sectionf" id="contact">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Contactanos</h2>
+          <h2 class="mt-0 text-white">Contactanos</h2>
           <hr class="divider my-4">
-           <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'
-        ]); ?>" method="post">
-        <label for="nombre">nombre</label>
-        <input type="text" name="nombre" id="nombre"><br>
-        <label for="email">Email:</label>
-        <label for="email">Email:</label>
+          <article class="fix">
+           
+              <form action="enviar.php" method="post" class="formulario">
+             <!--  <h2 class="text-white h2">Formulario de contacto</h2> -->
+              <input class="entrada" type="text"       name="nombre"      placeholder="Ingrese su nombre completo" required>
+              <input class="entrada" type="email"      name="correo"       placeholder="Ingrese su Correo" required>
+              <textarea class="entrada" name="Comentario" placeholder="Comentario: Quiero empezar un proyecto con Macondo" required></textarea>
+               <input class="entrada" type="text"       name="Condominio"      placeholder="Nombre del Condominio o comercio" required>
+              <input class="entrada" type="text"       name="Filiales"      placeholder="Numero de Filiales" required>
+                  <hr>
+              <!-- botones radio para configuracion --> <!--  input margin:0; -->
+              <label class="titles " >Configuración</label><br>
 
+              <input class="radios" type="radio" id="Horizontal" name="Configuracion" value="Horizontal">
+              
+              <label class="text-white" for="Horizontal">Horizontal</label><br>
+              
+              <input  class="radios" type="radio" id="Vertical" name="Configuracion" value="Vertical">
+              
+              <label class="text-white"  for="Vertical">Vertical</label><br>
+             
+              <input class="radios" type="radio" id="Mixto" name="Configuracion" value="Mixto">
+              
+              <label class="text-white" for="Mixto">Mixto</label>
+                <!-- botones radio para tipo --> <!--  input margin:0; -->
+                <hr>
+              <label  class="titles " >Tipo</label><br>
 
+              <input required class="radios" type="radio" id="Residencial" name="Tipo" value="Residencial">
+              
+              <label class="text-white" for="Residencial">Residencial</label><br>
+              
+              <input class="radios" type="radio" id="Comercial" name="Tipo" value="Comercial">
+              
+              <label class="text-white" for="Comercial">Comercial</label><br>
+             
+              <input class="radios" type="radio" id="Mixto2" name="Tipo" value="Mixto">
+              
+              <label class="text-white" for="Mixto2">Mixto</label>
+              <!-- botones radio para Hay planta de tratamiento -->
+               <!--  <hr>
+              <label class="titles " >Hay planta de tratamiento</label><br>
 
+              <input class="radios" type="radio" id="Si" name="Hay planta de tratamiento" value="Si">
+              
+              <label class="text-white" for="Si">Si</label><br>
+              
+              <input class="radios" type="radio" id="No" name="Hay planta de tratamiento" value="No">
+              
+              <label class="text-white" for="No">No</label><br> -->
+             <!--  botones radio para Hay piscina/casa club -->
+            <!--  <hr>
+             <label class="titles" >Hay piscina/casa club</label><br>
 
+             <input class="radios" type="radio" id="Si2" name="Hay piscina/casa club" value="Si">
+             
+             <label class="text-white" for="Si2">Si</label><br>
+             
+             <input class="radios" type="radio" id="No2" name="Hay piscina/casa club" value="No">
 
+             <label class="text-white" for="No2">No</label><br>-->
+                <hr> 
+              <!-- boton -->
+              <input type="submit" id="boton" value="Enviar">
+   
+             
+            </form> 
+        
+            </article>
+            <p class="text-mutedf finaly-text">¿Listo para comenzar tu próximo proyecto con nosotros? ¡Llena el formulario de contacto o envíenos un correo electrónico o ¡haz click en el logo de Whatsapp! y nos pondremos en contacto con usted lo antes posible!</p>
+          </div>
+          </div>
+          <div class="row">
+         <!-- -->
+          <div class="col-lg-4 mr-auto text-center mb-5 mb-lg-0">
+            <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+            <!-- Make sure to change the email address in anchor text AND the link below! -->
+            <a class="d-block" href="mailto:Cliente@macondocr.com">Cliente@macondocr.com</a>
+          </div>
+          <!-- kdfnmkdnfdn -->
+          <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+            <a target="_blank" href=""><i class="fa-brands fa-whatsapp fa-3x mb-3 text-muted"></i> </a>
+            <div class=" finaly-text">Haz click para hablar por Whatsapp</div>
+          </div>
+          <!-- osfmodnfoen -->
+         <!--  <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+            <a target="_BLANK" href="https://www.facebook.com/Macondo-113184015379929"><i class="fa-brands fa-facebook fa-3x mb-3 text-muted"></i></a>
+            <div>Nuestro Facebook</div>
+          </div> -->
+           <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+            <i class="fas fa-phone fa-3x mb-3 text-center text-muted"></i>
+            <div>2282-1482</div>
+          </div> 
+          </div>
+          </div>
+  </section> 
 
-
-
-          <p class="text-muted mb-5">¿Listo para comenzar tu próximo proyecto con nosotros? ¡Llámenos o envíenos un correo electrónico y nos pondremos en contacto con usted lo antes posible!</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>2282-1482</div>
-        </div>
-        <div class="col-lg-4 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:Cliente@macondocr.com">Cliente@macondocr.com</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-light py-5">
+  
+  <!-- Footer   "small text-center text-muted"-->
+  <footer class=" py-5 footer">
+  
     <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2022 - Macondo CR</div>
+      <div class="small text-center text-white">Copyright &copy; 2022 - Macondo CR</div>
     </div>
   </footer>
 
