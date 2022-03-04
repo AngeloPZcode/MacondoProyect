@@ -1,5 +1,5 @@
 <?php
-    $destino "Cliente@macondocr.com";
+    $destino "zamoraangelo505@gmail.com";
     $nombre = $_POST["nombre"];
     $correo = $_POST["correo"];
     $Comentario = $_POST["Comentario"];
@@ -8,7 +8,8 @@
     $Configuracion = $_POST["Configuracion"];
     $Tipo = $_POST["Tipo"];
     /* XD */
-    $contenido = "nombre" . $nombre .  "\nCorreo" . $correo . "\nComentario" . $Condominio . "\nFiliales" $Filiales . "\nConfiguracion" $Configuracion
+    $contenido = "nombre" . $nombre .  "\nCorreo" . $correo . "\nComentario" . $Comentario . "\nCondominio" . $Condominio . "\nFiliales" . $Filiales . "\nConfiguracion" . $Configuracion . "\nTipo"
+    . $Tipo
     mail($destino,"Contacto cliente, $contenido")
     header("Location:Gracias.html")
  ?>
