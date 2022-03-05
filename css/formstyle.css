@@ -125,3 +125,7 @@ label{
     margin-top: 20px;
     
 }
+.hidden{
+   visibility: hidden;
+    display: none;
+}
