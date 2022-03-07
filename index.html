@@ -296,60 +296,38 @@
               <!-- botones radio para configuracion --> <!--  input margin:0; -->
               <label class="titles " >Configuración</label><br>
 
-              <input class="radios" type="radio" id="Horizontal" name="Configuracion" value="Horizontal">
+              <input class="radios" type="radio" id="Horizontal" name="Configuración" value="Horizontal" required>
               
               <label class="text-white" for="Horizontal">Horizontal</label><br>
               
-              <input  class="radios" type="radio" id="Vertical" name="Configuracion" value="Vertical">
+              <input  class="radios" type="radio" id="Vertical" name="Configuración" value="Vertical" required>
               
               <label class="text-white"  for="Vertical">Vertical</label><br>
              
-              <input class="radios" type="radio" id="Mixto" name="Configuracion" value="Mixto">
+              <input class="radios" type="radio" id="Mixto" name="Configuración" value="Mixto" required>
               
               <label class="text-white" for="Mixto">Mixto</label>
                 <!-- botones radio para tipo --> <!--  input margin:0; -->
                 <hr>
-              <label  class="titles " >Tipo</label><br>
+              <label  class="titles" >Tipo</label><br>
 
-              <input required class="radios" type="radio" id="Residencial" name="Tipo" value="Residencial">
+              <input required class="radios" type="radio" id="Residencial" name="Tipo" value="Residencial" required>
               
-              <label class="text-white" for="Residencial">Residencial</label><br>
+              <label class="text-white" for="Residencial" name="Tipo">Residencial</label><br>
               
-              <input class="radios" type="radio" id="Comercial" name="Tipo" value="Comercial">
+              <input class="radios" type="radio" id="Comercial" name="Tipo" value="Comercial" required>
               
-              <label class="text-white" for="Comercial">Comercial</label><br>
+              <label class="text-white" for="Comercial" name="Tipo">Comercial</label><br>
              
-              <input class="radios" type="radio" id="Mixto2" name="Tipo" value="Mixto">
+              <input class="radios" type="radio" id="Mixto2" name="Tipo" value="Mixto" required>
               
-              <label class="text-white" for="Mixto2">Mixto</label>
-              <!-- botones radio para Hay planta de tratamiento -->
-               <!--  <hr>
-              <label class="titles " >Hay planta de tratamiento</label><br>
-
-              <input class="radios" type="radio" id="Si" name="Hay planta de tratamiento" value="Si">
-              
-              <label class="text-white" for="Si">Si</label><br>
-              
-              <input class="radios" type="radio" id="No" name="Hay planta de tratamiento" value="No">
-              
-              <label class="text-white" for="No">No</label><br> -->
-             <!--  botones radio para Hay piscina/casa club -->
-            <!--  <hr>
-             <label class="titles" >Hay piscina/casa club</label><br>
-
-             <input class="radios" type="radio" id="Si2" name="Hay piscina/casa club" value="Si">
+              <label class="text-white" for="Mixto2" name="Tipo">Mixto</label>
              
-             <label class="text-white" for="Si2">Si</label><br>
-             
-             <input class="radios" type="radio" id="No2" name="Hay piscina/casa club" value="No">
-
-             <label class="text-white" for="No2">No</label><br>-->
              <hr> 
-                <p class="hidden">
-                  <label>
+                  <label class="hidden">
                     Don’t fill this out if you’re human: <input name="bot-field" />
                   </label>
-                </p>
+              
               <!-- boton -->
 
               <input type="submit" id="boton" value="Enviar">
