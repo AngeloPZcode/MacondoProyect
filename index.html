@@ -289,12 +289,12 @@
              <!--  <h2 class="text-white h2">Formulario de contacto</h2> -->
               <input class="entrada" type="text"       name="nombre"      placeholder="Ingrese su nombre completo" required>
               <input class="entrada" type="email"      name="correo"       placeholder="Ingrese su Correo" required>
-              <textarea class="entrada" name="Comentario" placeholder="Comentario: Quiero empezar un proyecto con Macondo" required></textarea>
+              <textarea class="entrada" type="textarea" name="Comentario" placeholder="Comentario: Quiero empezar un proyecto con Macondo" required></textarea>
                <input class="entrada" type="text"       name="Condominio"      placeholder="Nombre del Condominio o comercio" required>
               <input class="entrada" type="text"       name="Filiales"      placeholder="Numero de Filiales" required>
                   <hr>
               <!-- botones radio para configuracion --> <!--  input margin:0; -->
-              <label class="titles " >Configuración</label><br>
+              <label class="titles " value="Configuración" name="Configuración" >Configuración</label><br>
 
               <input class="radios" type="radio" id="Horizontal" name="Configuración" value="Horizontal" required>
               
@@ -311,15 +311,15 @@
                 <hr>
               <label  class="titles" >Tipo</label><br>
 
-              <input required class="radios" type="radio" id="Residencial" name="Tipo" value="Tipo" required>
+              <input required class="radios" type="radio" id="Residencial" name="Tipo" value="Residencial" required>
               
               <label class="text-white" for="Residencial" name="Tipo">Residencial</label><br>
               
-              <input class="radios" type="radio" id="Comercial" name="Tipo" value="Tipo" required>
+              <input class="radios" type="radio" id="Comercial" name="Tipo" value="Comercial" required>
               
               <label class="text-white" for="Comercial" name="Tipo">Comercial</label><br>
              
-              <input class="radios" type="radio" id="Mixto2" name="Tipo" value="Tipo" required>
+              <input class="radios" type="radio" id="Mixto2" name="Tipo" value="Mixto" required>
               
               <label class="text-white" for="Mixto2" name="Tipo">Mixto</label>
              
